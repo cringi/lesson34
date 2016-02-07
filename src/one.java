@@ -37,7 +37,7 @@ class one {
         int[] list = new int[_list.length];
 
         // Convert this to an integer array
-        for(int x=0;x<list.length;x++) {
+        for (int x=0;x<list.length;x++) {
             list[x] = Integer.parseInt(_list[x]);
         }
 

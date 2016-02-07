@@ -20,7 +20,7 @@ import java.util.Scanner;
 class six {
     public static boolean allPositive(int[] list) {
         for (int value:list) {
-            if(value < 0) {
+            if (value < 0) {
                 return false;
             }
         }

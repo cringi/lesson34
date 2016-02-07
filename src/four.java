@@ -19,7 +19,7 @@ import java.util.Scanner;
 class four {
     public static int findMin(int[] list) {
         int smallest = list[0];
-        for(int value:list) {
+        for (int value:list) {
             if (value < smallest)
                 smallest = value;
         }
@@ -38,7 +38,7 @@ class four {
         int[] list = new int[_list.length];
 
         // Convert this to an integer array
-        for(int x=0;x<list.length;x++) {
+        for (int x=0;x<list.length;x++) {
             list[x] = Integer.parseInt(_list[x]);
         }
 

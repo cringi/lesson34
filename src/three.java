@@ -19,7 +19,7 @@ import java.util.Scanner;
 class three {
     public static int findMax(int[] list) {
         int largest = list[0];
-        for(int value:list) {
+        for (int value:list) {
             if (value > largest)
                 largest = value;
         }
@@ -38,7 +38,7 @@ class three {
         int[] list = new int[_list.length];
 
         // Convert this to an integer array
-        for(int x=0;x<list.length;x++) {
+        for (int x=0;x<list.length;x++) {
             list[x] = Integer.parseInt(_list[x]);
         }
 

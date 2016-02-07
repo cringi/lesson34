@@ -20,7 +20,7 @@ import java.util.Scanner;
 class five {
     public static int sumEven(int[] list) {
         int sum = 0;
-        for(int value:list) {
+        for (int value:list) {
             // I'm going off the assumption only even numbers are divisible by two
             if (value%2 == 0)
                 sum += value;
