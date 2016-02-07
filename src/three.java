@@ -17,18 +17,31 @@
 import java.util.Scanner;
 
 class three {
+    public static int findMax(int[] list) {
+        int largest = list[0];
+        for(int value:list) {
+            if (value > largest)
+                largest = value;
+        }
 
-    public static int findMax(int [] a)
-    {
-        //Write your code here
-        //Change the return value as you see fit
-        return 0;
+        return largest;
     }
 
-    public static void main(String[] args)
-    {
-     /*
-      * Test your method here
-      */
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter an list of number, separate with a space: ");
+        String data = input.nextLine();
+
+        // Put what we currently have into an array
+        String[] _list = data.split(" ");
+        int[] list = new int[_list.length];
+
+        // Convert this to an integer array
+        for(int x=0;x<list.length;x++) {
+            list[x] = Integer.parseInt(_list[x]);
+        }
+
+        System.out.println("Largest number: " + findMax(list));
     }
 }
