@@ -18,18 +18,32 @@
 import java.util.Scanner;
 
 class five {
+    public static int sumEven(int[] list) {
+        int sum = 0;
+        for(int value:list) {
+            // I'm going off the assumption only even numbers are divisible by two
+            if (value%2 == 0)
+                sum += value;
+        }
 
-    public static int sumEven(int [] a)
-    {
-        //Write your code here
-        //Change the return value as you see fit
-        return 0;
+        return sum;
     }
 
-    public static void main(String[] args)
-    {
-     /*
-      * Test your method here
-      */
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter an list of number, separate with a space: ");
+        String data = input.nextLine();
+
+        // Put what we currently have into an array
+        String[] _list = data.split(" ");
+        int[] list = new int[_list.length];
+
+        // Convert this to an integer array
+        for (int x = 0; x < list.length; x++) {
+            list[x] = Integer.parseInt(_list[x]);
+        }
+
+        System.out.println("Sum of even numbers: " + sumEven(list));
     }
 }
