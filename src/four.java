@@ -17,18 +17,31 @@
 import java.util.Scanner;
 
 class four {
+    public static int findMin(int[] list) {
+        int smallest = list[0];
+        for(int value:list) {
+            if (value < smallest)
+                smallest = value;
+        }
 
-    public static int findMin(int [] a)
-    {
-        //Write your code here
-        //Change the return value as you see fit
-        return 0;
+        return smallest;
     }
 
-    public static void main(String[] args)
-    {
-     /*
-      * Test your method here
-      */
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter an list of number, separate with a space: ");
+        String data = input.nextLine();
+
+        // Put what we currently have into an array
+        String[] _list = data.split(" ");
+        int[] list = new int[_list.length];
+
+        // Convert this to an integer array
+        for(int x=0;x<list.length;x++) {
+            list[x] = Integer.parseInt(_list[x]);
+        }
+
+        System.out.println("Smallest number: " + findMin(list));
     }
 }
