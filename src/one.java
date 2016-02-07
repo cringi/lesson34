@@ -41,6 +41,6 @@ class one {
             list[x] = Integer.parseInt(_list[x]);
         }
 
-        System.out.println(sum(list));
+        System.out.println("Sum: " + sum(list));
     }
 }
